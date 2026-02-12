@@ -1,0 +1,263 @@
+<html lang="en" nighteye="disabled"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupid's Canvas Submission Template</title>
+    <style>
+        :root {
+            --cupid-pink: #ffafcc;
+            --valentine-red: #ff4d6d;
+            --love-purple: #c77dff;
+            --chocolate: #7b3f00;
+            --vanilla: #fffaf0;
+            --blush: #fde2e4;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--chocolate);
+            background: linear-gradient(135deg, var(--vanilla) 0%, var(--blush) 100%);
+            background-attachment: fixed;
+            padding-bottom: var(--space-xl);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--valentine-red) 0%, var(--love-purple) 100%);
+            color: white;
+            padding: var(--space-xl) 0;
+            text-align: center;
+            margin-bottom: var(--space-xl);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: var(--space-sm);
+            font-family: 'Georgia', serif;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: var(--radius-md);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            padding: var(--space-lg);
+            border-left: 5px solid var(--valentine-red);
+        }
+
+        .card-title {
+            color: var(--valentine-red);
+            font-size: 1.6rem;
+            margin-bottom: var(--space-md);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: var(--space-md);
+            background-color: #fff;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        th, td {
+            padding: var(--space-md);
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: var(--valentine-red);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--blush);
+        }
+
+        .note {
+            margin-top: var(--space-md);
+            font-size: 0.95rem;
+        }
+
+        .code-preview {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            border-radius: var(--radius-sm);
+            padding: var(--space-lg);
+            margin-top: var(--space-md);
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+        }
+
+        .code-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .copy-status {
+            font-size: 0.9rem;
+            color: var(--chocolate);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--valentine-red);
+            color: white;
+            padding: var(--space-md) var(--space-lg);
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: var(--space-lg);
+            box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+        }
+
+        .btn:hover {
+            background-color: var(--love-purple);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: var(--cupid-pink);
+            color: var(--chocolate);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: var(--space-xl);
+            padding: var(--space-lg);
+            color: var(--chocolate);
+            border-top: 1px solid var(--cupid-pink);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Cupid's Canvas Submission Template</h1>
+            <p>Complete this page and submit with your project.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h2 class="card-title">Team Information</h2>
+            <p>Fill in your team details.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Team Member Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Team Member: First N: Lan Last N: Le Dang</td>
+                    </tr>
+                    <tr>
+                        <td>Team Member: First N: Cristin Last N: Khor</td>
+                    </tr>
+                    <tr>
+                        <td>Team Member: First N: Caleb Last N: Nana</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="note">Tip: Use the same naming format as your GitHub commits.</p>
+
+            <h2 class="card-title" style="margin-top: var(--space-lg);">Codd Server Submission URL</h2>
+            <p>Paste the deployment URL that you will submit on the codd server.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Deployment URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>https://codd.cs.gsu.edu/~username/project-folder/</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="card-title" style="margin-top: var(--space-lg);">Submission Template Code</h2>
+            <p>Copy the HTML source for this page if you need to reuse or reference it.</p>
+
+            <div class="code-actions">
+                <button class="btn btn-secondary" id="copy-page-source" type="button">Copy Page HTML</button>
+                <span class="copy-status" id="copy-status">Select the code if copy is blocked.</span>
+            </div>
+
+            <pre class="code-preview"><code id="page-source"></code></pre>
+
+            <a class="btn" href="IndexCC01.html">Back to Challenge Index</a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Cupid's Canvas - Submission Template</p>
+    </footer>
+
+    <script>
+        const pageSource = document.getElementById('page-source');
+        const copyButton = document.getElementById('copy-page-source');
+        const copyStatus = document.getElementById('copy-status');
+
+        if (pageSource) {
+            pageSource.textContent = document.documentElement.outerHTML;
+        }
+
+        if (copyButton && pageSource) {
+            copyButton.addEventListener('click', async () => {
+                try {
+                    await navigator.clipboard.writeText(pageSource.textContent);
+                    if (copyStatus) {
+                        copyStatus.textContent = 'Copied page HTML.';
+                    }
+                } catch (error) {
+                    if (copyStatus) {
+                        copyStatus.textContent = 'Copy failed. Select and copy the code manually.';
+                    }
+                }
+            });
+        }
+    </script></body></html>
