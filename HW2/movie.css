@@ -1,0 +1,146 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font: 8pt Verdana, Tahoma, sans-serif;
+    background-color: white;
+  }
+  
+  /* Container */
+  #container {
+    width: 800px;
+    margin: 0 auto;
+    border: 4px solid gray;
+    background-color: white;
+    display: flex;
+  }
+  
+  /* Top Banner */
+  #banner {
+    height: 80px;
+    background: url(assets/banner.png) repeat-x;
+    text-align: center;
+    color: white;
+    font-size: 24pt;
+    line-height: 50px;
+  }
+  
+  /* Left Column */
+  #left-column {
+    float: left;
+    width: 550px;
+    padding: 10px;
+  }
+  
+  #rating {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .rating-images img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  
+  /* Reviews Section */
+  #reviews-container {
+    background-image: url(assets/background.png);
+    background-repeat: repeat;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .review-column {
+    width: 47%;
+  }
+  
+  .review-box {
+    background-color: white;
+    border: 2px solid gray;
+    padding: 8px;
+    font-size: 8pt;
+  }
+  
+  .quote {
+    font-weight: bold;
+  }
+  
+  .critic {
+    font-style: italic;
+  }
+  
+  .stars img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Right Column (Sidebar) */
+  #right-column {
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+    padding: 10px;
+  }
+  
+  #watch-trailer {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #17181a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #watch-trailer:hover {
+    background-color: #333;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+
+  strong {
+    font-weight: bold; /* bold styling where needed */
+  }
+
+
+
+  footer {
+    background-color: #17181a; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute; /* Anchor the footer */
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+  }
+  
+  #validators {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: #17181a; 
+  }
+  
+  #validators img {
+    width: 48px; 
+    height: 24px; 
+  }
+
+  #validators img {
+    background-color: #17181a; 
+    padding: 5px; 
+    border-radius: 4px; 
+  }
