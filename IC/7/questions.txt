@@ -1,0 +1,25 @@
+
+1. Why is wrapping logic in a function better than repeating the same if/else block?
+A: Wrapping logic in a function is better than repeating the same if/else block because it makes the code more readable and reusable. 
+It helps improve code readability and helps streamline the debugging and testing process.
+
+2. Why is return often better than echo inside reusable functions?
+A: Return is often better than echo inside reusable functions because it offers better flexibility and control for its usage such as
+being able to pass to other functions. Using return also helps prevent unexpected output such as how echo immediately forces output.
+
+3. What happens if you use $winner inside a function without global or a parameter?
+A:
+
+4. How does a default parameter improve code reliability?
+A:
+
+5. If a user enters "twenty" instead of 20, what should your code do?
+A:
+
+6. Give three e-commerce examples where functions are essential.
+A:
+
+
+7. What are the first two things to check when a function gives no output?
+A: The first two things to check for when a function gives no output is to see if a function has been executed or not. Furthermore, it is 
+important to check if there is a return statement within the function as well.
