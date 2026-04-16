@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Part B - Memory Matching Game</title>
+    <style>
+      body {
+        background-color: #fdfbd4;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      #game-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .card {
+        width: 80px;
+        height: 80px;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        cursor: pointer;
+        border: 1px solid #999;
+      }
+      .matched {
+        background: #d4edda;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Memory Matching Game</h2>
+    <div>
+      Pairs:
+      <select id="pairs">
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+      </select>
+      Difficulty:
+      <select id="diff">
+        <option value="3">Easy (3s)</option>
+        <option value="5">Med (5s)</option>
+        <option value="8">Hard (8s)</option>
+      </select>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <p>
+      Score: <span id="current-score">0</span> | Time:
+      <span id="timer">0</span>s
+    </p>
+    <div id="game-grid"></div>
+    <div id="leaderboard">
+      <h3>Top 5</h3>
+      <ol id="scores-list"></ol>
+    </div>
+    <script src="memory.js"></script>
+  </body>
+</html>

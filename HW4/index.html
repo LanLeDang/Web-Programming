@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Part A - Number Guessing Game</title>
+    <style>
+      body {
+        background-color: #fdfbd4;
+        font-family: sans-serif;
+        text-align: center;
+        padding-top: 50px;
+      }
+      .container {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      #clock {
+        font-weight: bold;
+        color: #555;
+      }
+      .stats {
+        margin-top: 15px;
+        font-size: 0.9em;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Number Guessing Game</h2>
+      <p id="clock">00:00:00</p>
+      <p>Guess a number between 1 and 100:</p>
+      <input type="number" id="guess-input" min="1" max="100" />
+      <button id="guess-btn">Guess</button>
+      <p id="feedback">Take a guess to begin.</p>
+      <div class="stats" id="stats">Guesses Left: 10 | Wins: 0 | Rounds: 0</div>
+      <br />
+      <a href="memory.html">Go to Part B: Memory Game</a>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New User Signup</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #095859;
+        padding: 40px;
+      }
+      .form-container {
+        max-width: 600px;
+        margin: auto;
+        background: #bcc6cc;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .field {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .radio-group {
+        margin: 10px 0;
+      }
+      .btn-submit {
+        background: #2563eb;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn-reset {
+        background: #64748b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>New User Signup</h2>
+      <form
+        action="https://codd.cs.gsu.edu/~lle38/WP/IC/9/params.php"
+        method="POST"
+      >
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" name="name" required />
+        </div>
+
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" name="email" required />
+        </div>
+
+        <div class="field">
+          <label>Address</label>
+          <textarea name="address" rows="2"></textarea>
+        </div>
+
+        <div class="field">
+          <label>Credit Card Type</label>
+          <select name="ccard">
+            <option value="">-- Select a card type --</option>
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="Amex">American Express</option>
+            <option value="Discover">Discover</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Date of Birth</label>
+          <input type="date" name="dob" />
+        </div>
+
+        <div class="field">
+          <label>Gender</label>
+          <input type="radio" name="gender" value="Female" /> Female
+          <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Non-binary" /> Non-binary
+        </div>
+
+        <div class="field">
+          <label>Telephone Number</label>
+          <input type="text" name="phone" />
+        </div>
+
+        <div class="field">
+          <label>Learning Track</label>
+          <select name="track">
+            <option value="Web Forms">Web Forms</option>
+            <option value="Flutter UI">Flutter UI Thinking</option>
+            <option value="Dart Logic">Dart Logic Thinking</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Personal Statement</label>
+          <textarea name="statement" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Form</button>
+        <button type="reset" class="btn-reset">Clear Form</button>
+      </form>
+    </div>
+  </body>
+</html>
